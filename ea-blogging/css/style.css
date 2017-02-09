@@ -1,0 +1,341 @@
+/*
+Theme Name: ea-blogging
+Description: original Child Theme for Ellsworth American blogging
+Author: Reach Maine
+Template: original
+Version: 1.2
+*/
+@import url("../original/style.css");
+/* ----------- Colors ---------------------------------- */
+/* ----------- end Colors ----------- */
+/* ----------- Typography ------------------------------- */
+i.fa-pull-left {
+  float: left;
+  padding-right: 5px; }
+
+i.fa-pull-right {
+  float: right;
+  padding-left: 5px; }
+
+/* ----------- end typography ----------- */
+/* remove body shadow and background*/
+body.site-boxed .site-wrapper {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none; }
+
+body {
+  background-image: none; }
+
+/* aligning main & top navigation */
+@media (min-width: 1155px) {
+  #sf-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; } }
+#nav.prl-navbar #sf-menu {
+  padding-left: 0px; }
+
+.single-post-thumbnail img {
+  width: 100%; }
+
+.wp-caption p.wp-caption-text {
+  padding: 5px; }
+
+.wp-caption.aligncenter {
+  width: 100% !important; }
+
+.wp-caption.alignnone {
+  width: inherit !important; }
+
+.wp-caption {
+  margin-bottom: 15px; }
+
+#sliderTab {
+  background-color: #0D365A; }
+  #sliderTab .slider_content .slider_title {
+    background: linear-gradient(to bottom, transparent 0%, #0D365A 100%); }
+
+.pullquote-left {
+  width: 250px;
+  float: left;
+  position: relative;
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.3em;
+  margin: 15px 15px 15px 0px;
+  text-align: center;
+  font-family: times; }
+
+/* the Author tabs section at bottom of single posts */
+#ts-fab-below div.ts-fab-tabs div.ts-fab-tab {
+  border-color: #DDD; }
+
+#ts-fab-bio-archive {
+  display: block;
+  margin-bottom: 20px;
+  border-color: #DDD; }
+
+/*  tag column page-builder blocks */
+.tag-cat.obits, .archive-cat.obits {
+  width: 100%;
+  height: 20px;
+  border-top: 1px solid #BDBDBD;
+  border-bottom: 1px solid #BDBDBD;
+  margin-top: 3px; }
+
+.tag-cat.obits:before, .archive-cat.obits:before {
+  content: "In Memoriam"; }
+
+.prl-list-category .list-thumbnail {
+  margin-bottom: 0px; }
+
+/* Footer/COPYRIGHT */
+#footer .footer-widget {
+  padding-top: 10px;
+  background-color: #333; }
+  #footer .footer-widget .prl-block-title {
+    border-color: #444;
+    color: #1E73BE;
+    text-align: center;
+    border-top: 0px;
+    font-size: 14px; }
+  #footer .footer-widget .prl-grid-divider:not(:empty) > [class*='prl-span-']:not(.prl-span-12):nth-child(n+2) {
+    border-color: #444; }
+  #footer .footer-widget .prl-span-3 {
+    margin-bottom: 10px; }
+    #footer .footer-widget .prl-span-3 center {
+      padding-bottom: 5px; }
+    #footer .footer-widget .prl-span-3 a {
+      font-size: 14px; }
+#footer .copyright .left {
+  width: auto; }
+
+/* calendar output page  */
+#eai-cal-out .zcal_date_group, #eai-cal-out .zcal_city_group {
+  text-align: center; }
+
+/* my calendar width */
+aside .widget_hcclist h2.widgettitle {
+  border-bottom: 1px solid #DDD;
+  text-align: center;
+  padding-bottom: 10px; }
+aside .widget_hcclist ul.hcc_event_list {
+  padding-left: 0px; }
+  aside .widget_hcclist ul.hcc_event_list li.hcc_event {
+    list-style: none;
+    padding-bottom: 10px; }
+    aside .widget_hcclist ul.hcc_event_list li.hcc_event a .hcc_event_title {
+      line-height: 20px;
+      margin-bottom: 3px;
+      font-size: 14px; }
+
+a.more-about-link:before {
+  content: "More About "; }
+
+/* Shop local boxes */
+.zbzdir-biz {
+  height: 115px; }
+
+.widget-zbzdir-list, .zbzdir-biz-list {
+  width: 100%; }
+
+.widget .textwidget .eia-right-rail,
+.widget .textwidget .eai-right-rail {
+  margin-bottom: 35px;
+  -webkit-box-shadow: 7px 15px 33px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 15px 33px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 15px 33px 0px rgba(0, 0, 0, 0.75); }
+
+.flexslider.gallery_slider {
+  float: left; }
+
+.flexslider .caption {
+  position: initial; }
+
+#emodal-overlay {
+  background-color: rgba(101, 121, 156, 0.72) !important; }
+
+.extra-info {
+  background-color: #f0f0f0;
+  outline-color: #1e73be;
+  outline-width: medium;
+  outline-style: solid;
+  padding: 20px 20px 10px;
+  margin-bottom: 20px; }
+
+.wonderplugingallery-container {
+  clear: both; }
+
+/* responsive iframes */
+.gif-wide {
+  position: relative;
+  padding-bottom: 67%;
+  height: 0;
+  overflow: hidden; }
+  .gif-wide iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.gif-tall {
+  position: relative;
+  padding-bottom: 150%;
+  height: 0;
+  overflow: hidden; }
+  .gif-tall iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+/* responsive video embed zig 10May16 */
+.ea-responsive-container {
+  position: relative;
+  padding-bottom: 50.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 1em; }
+  .ea-responsive-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+/* May 2016 re-design */
+#sliderTab {
+  background-color: #0D365A; }
+
+body.site-boxed .site-wrapper {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none; }
+
+body {
+  background-image: none; }
+
+#nav.prl-navbar .prl-container .nav-wrapper {
+  border-top: none; }
+
+#sidebar .widget_recent_entries, #sidebar .widget_advanced_menu, #sidebar .widget-recent-post, #sidebar .widget_awesomeweatherwidget, #sidebar .widget-zbzdir-list, #sidebar .widget-zbtlist, #sidebar .widget_hcclist, #sidebar #zsfw-authors, #sidebar {
+  border: none; }
+
+#sidebar .widget_advanced_menu.icon-home::before, #sidebar .widget_hcclist::before, #sidebar .widget-zbzdir-list::before, #sidebar .widget-zbtlist::before, #sidebar .widget-recent-post::before {
+  content: none; }
+
+aside .widget .widget-title {
+  border-bottom: none; }
+
+aside .widget_hcclist ul.hcc_event_list li.hcc_event a .hcc_event_title, a.hcc_seeall {
+  font-weight: bold; }
+
+div.hcc_event_venue, div.hcc_event_datetime {
+  color: #484848; }
+
+p {
+  font-size: 15px; }
+
+div.yarpp-related h4, div.yarpp-related-widget h4 {
+  font-weight: bold;
+  text-align: center; }
+
+div.yarpp-related-widget ul {
+  padding-left: 0px; }
+
+span.yarpp-thumbnail img {
+  width: 100%; }
+
+h1 + hr {
+  display: none; }
+
+#footer .footer-widget {
+  background-color: white; }
+
+.footer-widget a {
+  color: #484848; }
+
+#footer .footer-widget .prl-block-title {
+  color: black; }
+
+div.prl-grid prl-grid-divider {
+  border-top: 1px solid #dcdcdc; }
+
+#footer .copyright {
+  background-color: white; }
+
+footer#footer .prl-grid-divider:not(:empty) > [class*='prl-span-']:not(.prl-span-12):nth-child(n+2) {
+  border-left: none; }
+
+#nav.prl-navbar {
+  margin-bottom: 0px; }
+
+.prl-grid > [class*='prl-span-'] {
+  margin-bottom: 10px; }
+
+section#main p a {
+  color: #1e73be; }
+
+div.ccfic a {
+  color: #1e73be; }
+
+div.yarpp-related ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+#aq-template-wrapper-79074 .prl-span-3 {
+  padding-left: 15px;
+  padding-right: 20px; }
+
+.prl-block-title, .comment-reply-title, .yarpp-related-widget h3 {
+  font-family: "Roboto Condensed";
+  border-bottom: none;
+  margin-bottom: 0px;
+  font-size: 15px; }
+
+aside .widget .widget-title, aside .widget .prl-block-title, aside .widget .widget-title a {
+  color: black; }
+
+p, .prl-entry-content li, .single-post-thumbnail-caption {
+  font-family: Vollkorn; }
+
+.prl-entry-content li {
+  font-size: 15px; }
+
+p {
+  font-size: 17px;
+  line-height: 23px; }
+
+#nav.prl-navbar #sf-menu li a {
+  font-size: 18px;
+  font-family: "Roboto Condensed"; }
+
+#topnav a {
+  font-family: "Roboto Condensed";
+  font-size: 14px; }
+
+.ccfic {
+  font-size: 15px; }
+
+p.yarpp-thumbnail-title {
+  font-family: "Roboto Condensed"; }
+
+.wp-caption p.wp-caption-text {
+  font-size: 14px; }
+
+h4.eai-featured-2nd {
+  line-height: 19px; }
+
+aside .widget .widget-title {
+  font-family: "Roboto Condensed"; }
+
+strong:first-child {
+  font-size: 15px; }
+
+/* *** keep this at the end *** */
+/* **** media **** */
