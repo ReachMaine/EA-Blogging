@@ -1,64 +1,756 @@
 /*
-Error: File to import not found or unreadable: partials/settings.
-       Load paths:
-         Compass::SpriteImporter
-         C:/EllsAmWork/github repos/EA-Blogging/ea-blogging/sass
-         C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets
-        on line 12 of C:/EllsAmWork/github repos/EA-Blogging/ea-blogging/sass/style.scss
-
-7: *\/
-8: 
-9: @import url("../original/style.css");
-10: @import "partials/colors";
-11: @import "partials/typography";
-12: @import "partials/settings";
-13: @import "partials/styles";
-14: 
-15: /* remove body shadow and background*\/
-16: 
-17: body.site-boxed .site-wrapper {
-
-Backtrace:
-C:/EllsAmWork/github repos/EA-Blogging/ea-blogging/sass/style.scss:12
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/import_node.rb:45:in `import'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/engine.rb:278:in `render'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:328:in `block in watch'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/vendor/listen/lib/listen/listener.rb:252:in `call'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+Theme Name: ea-blogging
+Description: original Child Theme for Ellsworth American blogging
+Author: Reach Maine
+Template: original
+Version: 1.2
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: partials/settings.\A        Load paths:\A          Compass::SpriteImporter\A          C:/EllsAmWork/github repos/EA-Blogging/ea-blogging/sass\A          C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets\A         on line 12 of C:/EllsAmWork/github repos/EA-Blogging/ea-blogging/sass/style.scss\A \A 7: */\A 8: \A 9: @import url(\"../original/style.css\");\A 10: @import \"partials/colors\";\A 11: @import \"partials/typography\";\A 12: @import \"partials/settings\";\A 13: @import \"partials/styles\";\A 14: \A 15: /* remove body shadow and background*/\A 16: \A 17: body.site-boxed .site-wrapper {"; }
+@import url("../original/style.css");
+/* ----------- Colors ---------------------------------- */
+/* ----------- end Colors ----------- */
+/* ----------- Typography ------------------------------- */
+i.fa-pull-left {
+  float: left;
+  padding-right: 5px; }
+
+i.fa-pull-right {
+  float: right;
+  padding-left: 5px; }
+
+/* ----------- end typography ----------- */
+/* ----------- branding ------------ */
+a.reach-logo {
+  color: white; }
+
+.reach-logo:before {
+  content: url("images/reach-favicon.png");
+  padding-right: 4px; }
+
+/* ----------- branding ------------ */
+/* ********* sytles ******** */
+.nowrap {
+  white-space: nowrap; }
+
+em {
+  font-style: italic; }
+
+/* Images */
+.entry-content img,
+.comment-content img {
+  max-width: 97.5%;
+  /* Fluid images for posts, comments, and widgets */ }
+
+img[class*="align"],
+img[class*="wp-image-"] {
+  height: auto;
+  /* Make sure images with WordPress-added height and width attributes are scaled correctly */ }
+
+img.size-full {
+  max-width: 97.5%;
+  width: auto;
+  /* Prevent stretching of full-size images with height and width attributes in IE8 */ }
+
+.wp-caption.alignnone {
+  width: auto !important; }
+
+header#masthead #topnav {
+  float: right; }
+header#masthead .prl-container .masthead-bg {
+  background-color: white;
+  line-height: 30px; }
+  header#masthead .prl-container .masthead-bg .prl-header-logo {
+    padding: 5px 0px 0px 0px;
+    background-color: white !important;
+    width: 100%;
+    text-align: center; }
+    header#masthead .prl-container .masthead-bg .prl-header-logo .prl-logo-time {
+      height: 40px; }
+  header#masthead .prl-container .masthead-bg .prl-header-mid {
+    float: left;
+    padding-left: 35%;
+    color: #333; }
+    header#masthead .prl-container .masthead-bg .prl-header-mid .prl-header-time {
+      margin-left: 0px; }
+      header#masthead .prl-container .masthead-bg .prl-header-mid .prl-header-time .fa.fa-calendar {
+        padding-right: 10px; }
+  header#masthead .prl-container .masthead-bg .prl-header-social {
+    float: right; }
+    header#masthead .prl-container .masthead-bg .prl-header-social a.fa.fa-facebook {
+      color: #3664A2; }
+    header#masthead .prl-container .masthead-bg .prl-header-social a.fa.fa-twitter {
+      color: #55ACEE; }
+    header#masthead .prl-container .masthead-bg .prl-header-social a.youtube-pic img {
+      vertical-align: middle; }
+
+#search_form-top.nav_search {
+  display: block; }
+
+#search_form.nav_search {
+  display: none; }
+
+#search_form.nav_search input,
+#search_form-top.nav_search input {
+  border: 1px solid #dddddd;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  min-width: 40px; }
+
+#nav.prl-navbar {
+  margin-bottom: 15px; }
+  #nav.prl-navbar .prl-container .nav-wrapper {
+    border-top: 1px solid #DDD; }
+  #nav.prl-navbar #sf-menu {
+    padding-left: 5%; }
+  #nav.prl-navbar #sf-menu li a {
+    font-size: 15px; }
+
+.sf-mega .prl-article-title a {
+  font-size: 16px; }
+
+#single-top-ad {
+  margin-bottom: 10px; }
+
+.ads_top {
+  margin-bottom: 0px; }
+
+/* stuff for breaking News */
+.eai-breaking-news {
+  margin-bottom: 10px !important;
+  width: 100%; }
+  .eai-breaking-news .mtphr-dnt-title {
+    margin-bottom: 0px;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #CCC; }
+  .eai-breaking-news .mtphr-dnt-tick-container .mtphr-dnt-tick-contents {
+    padding-top: 4px;
+    /*make text line up with header  */
+    background-color: #f2f4f8;
+    border: 1px solid #DDD; }
+
+.eai-featured-2nd {
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+/* end breaking news styling */
+#main {
+  border-left: 0px; }
+
+#mainFlexslider {
+  border: 0px; }
+
+.single-meta .prl-article-meta {
+  float: left; }
+.single-meta ul.prl-list.prl-list-sharing {
+  float: right;
+  margin-top: 0px; }
+  .single-meta ul.prl-list.prl-list-sharing li {
+    display: inline; }
+
+/** related posts styling */
+.yarpp-thumbnails-horizontal .yarpp-related ul, .yarpp-thumbnails-vertical .yarpp-related ul {
+  list-style-type: none; }
+  .yarpp-thumbnails-horizontal .yarpp-related ul p.yarpp-thumbnail-title, .yarpp-thumbnails-vertical .yarpp-related ul p.yarpp-thumbnail-title {
+    margin-bottom: 0px; }
+
+.yarpp-thumbnails-vertical {
+  float: left; }
+  .yarpp-thumbnails-vertical .yarpp-related ul {
+    width: 90%;
+    padding-left: 0px; }
+    .yarpp-thumbnails-vertical .yarpp-related ul li:not(:last-child) {
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+      border-bottom: 1px solid #BDBDBD; }
+    .yarpp-thumbnails-vertical .yarpp-related ul li .yarpp-thumbnail img {
+      margin-top: 5px; }
+
+.yarpp-thumbnails-horizontal .yarpp-related ul li {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top; }
+  .yarpp-thumbnails-horizontal .yarpp-related ul li .yarpp-thumbnail-title {
+    float: left; }
+
+.sf-menu li.eai-menu-top ul.sub-menu {
+  background-color: #FFF; }
+  .sf-menu li.eai-menu-top ul.sub-menu li.eai-menuheading a {
+    font-weight: bold;
+    text-decoration: underline; }
+  .sf-menu li.eai-menu-top ul.sub-menu li:not(.eai-menuheading) {
+    padding-left: 20px; }
+
+.widget .eai-right-rail,
+.widget .eia-right-rail {
+  margin-bottom: 30px; }
+
+.widget .eia-right-rail span,
+.widget .eai-right-rail span,
+.ad-container span {
+  display: inline-block;
+  width: 100%;
+  height: auto; }
+.widget .eia-right-rail a,
+.widget .eai-right-rail a,
+.ad-container a {
+  display: inline-block;
+  width: 100% !important;
+  height: auto !important; }
+.widget .eia-right-rail img,
+.widget .eai-right-rail img,
+.ad-container img {
+  height: auto !important; }
+
+.widget .eia-right-rail,
+.widget .eai-right-rail {
+  max-width: 300px; }
+  .widget .eia-right-rail div,
+  .widget .eai-right-rail div {
+    width: 100%; }
+
+/* .widget .eia-right-rail div,
+.widget .eai-right-rail div {
+	width: 100%;
+}
+.widget .eai-right-rail a { // zig 14July15
+	//max-width: 300px;
+	//width: 300px;
+}
+.widget .eia-right-rail img,
+.widget .eai-right-rail img {// zig 14July15
+		//width: 300px;
+		//max-height: 600px;
+	} */
+.ad-container.ad-in-content {
+  width: 97%; }
+  .ad-container.ad-in-content span {
+    padding-top: 1px; }
+
+a.eai-more-link {
+  text-align: right; }
+
+aside .widget .widget-title {
+  /* copied from .prl-block-title */
+  color: #1E73BE;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  border-bottom: 3px solid #DDD;
+  border-top: 1px solid #DDD;
+  padding: 10px 0;
+  text-transform: uppercase;
+  margin-bottom: 15px; }
+  aside .widget .widget-title a {
+    color: #1E73BE; }
+
+aside .widget .widget-title,
+aside .widget .prl-block-title {
+  text-align: center;
+  font-size: 16px; }
+
+ul.zbzdir-biz-list {
+  padding-left: 0px; }
+
+aside .widget-zbtlist {
+  /* sytling for text ad's widget on sidebar 123 */ }
+  aside .widget-zbtlist ul.zbzdir-biz-list,
+  aside .widget-zbtlist ul.zbt-ad-list {
+    padding-left: 0px; }
+    aside .widget-zbtlist ul.zbzdir-biz-list li:not(:last-child),
+    aside .widget-zbtlist ul.zbt-ad-list li:not(:last-child) {
+      border-bottom: 1px solid #DDD; }
+    aside .widget-zbtlist ul.zbzdir-biz-list .zbt-title,
+    aside .widget-zbtlist ul.zbt-ad-list .zbt-title {
+      font-size: 14px;
+      font-weight: bold;
+      display: block; }
+    aside .widget-zbtlist ul.zbzdir-biz-list .zbt-content,
+    aside .widget-zbtlist ul.zbt-ad-list .zbt-content {
+      display: block; }
+    aside .widget-zbtlist ul.zbzdir-biz-list .zbt-ad-link,
+    aside .widget-zbtlist ul.zbt-ad-list .zbt-ad-link {
+      font-size: 12px; }
+
+.biz-today.horizontal aside.widget-zbtlist {
+  float: left;
+  border-bottom: 1px solid #DDD; }
+  .biz-today.horizontal aside.widget-zbtlist .widget-title {
+    text-align: center; }
+  .biz-today.horizontal aside.widget-zbtlist ul.zbzdir-list,
+  .biz-today.horizontal aside.widget-zbtlist ul.zbt-ad-list {
+    float: left;
+    padding-left: 0px; }
+    .biz-today.horizontal aside.widget-zbtlist ul.zbzdir-list li,
+    .biz-today.horizontal aside.widget-zbtlist ul.zbt-ad-list li {
+      border-left: 1px solid #DDD;
+      width: 30%;
+      float: left;
+      padding-left: 2%;
+      padding-right: 1%; }
+      .biz-today.horizontal aside.widget-zbtlist ul.zbzdir-list li .zbt-title,
+      .biz-today.horizontal aside.widget-zbtlist ul.zbt-ad-list li .zbt-title {
+        font-size: 14px;
+        font-weight: bold;
+        display: block;
+        height: 35px; }
+      .biz-today.horizontal aside.widget-zbtlist ul.zbzdir-list li .zbt-content,
+      .biz-today.horizontal aside.widget-zbtlist ul.zbt-ad-list li .zbt-content {
+        display: block; }
+      .biz-today.horizontal aside.widget-zbtlist ul.zbzdir-list li .zbt-ad-link,
+      .biz-today.horizontal aside.widget-zbtlist ul.zbt-ad-list li .zbt-ad-link {
+        font-size: 12px;
+        float: left;
+        text-align: right;
+        width: 100%; }
+    .biz-today.horizontal aside.widget-zbtlist ul.zbzdir-list li:first-child,
+    .biz-today.horizontal aside.widget-zbtlist ul.zbt-ad-list li:first-child {
+      padding-left: 0px;
+      border-left: 0px; }
+    .biz-today.horizontal aside.widget-zbtlist ul.zbzdir-list li:last-child,
+    .biz-today.horizontal aside.widget-zbtlist ul.zbt-ad-list li:last-child {
+      padding-right: 0px; }
+
+.biz-today.horizontal aside.widget-zbzdir-list {
+  float: left;
+  border-bottom: 1px solid #DDD; }
+  .biz-today.horizontal aside.widget-zbzdir-list .widget-title {
+    text-align: center; }
+  .biz-today.horizontal aside.widget-zbzdir-list ul.zbzdir-biz-list {
+    float: left;
+    padding-left: 0px; }
+    .biz-today.horizontal aside.widget-zbzdir-list ul.zbzdir-biz-list li {
+      border-left: 1px solid #DDD;
+      width: 30%;
+      float: left;
+      padding-left: 2%;
+      padding-right: 2%;
+      /* 	.zbt-title {
+      		font-size: 14px;
+      		font-weight: bold;
+      		display: block;
+      		height: 35px;
+      	}
+      	.zbt-content {
+      		display: block;
+      	}
+      	.zbt-ad-link {
+      		font-size: 12px;
+      		float: left;
+      		text-align: right;
+      		width: 100%;
+      	}*/ }
+    .biz-today.horizontal aside.widget-zbzdir-list ul.zbzdir-biz-list li:first-child {
+      padding-left: 0px;
+      border-left: 0px; }
+    .biz-today.horizontal aside.widget-zbzdir-list ul.zbzdir-biz-list li:last-child {
+      padding-right: 0px; }
+
+.sub-category-title {
+  text-align: center; }
+
+/* *** smug mug widget styling *** */
+#zsfw-authors {
+  width: initial; }
+  #zsfw-authors .zimg img {
+    width: 100%; }
+  #zsfw-authors .bx-wrapper {
+    margin-bottom: 30px; }
+
+/* *** end smugmug widget styling *** */
+/* **** sidebar styling with boxes & icons *** */
+#sidebar .widget_recent_entries,
+#sidebar .widget_advanced_menu,
+#sidebar .widget-recent-post,
+#sidebar .widget_awesomeweatherwidget,
+#sidebar .widget-zbzdir-list,
+#sidebar .widget-zbtlist,
+#sidebar .widget_hcclist,
+#sidebar #zsfw-authors {
+  border: 2px solid #808080;
+  margin-left: -15px;
+  padding-left: 15px;
+  margin-right: -15px;
+  padding-right: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding-bottom: 10px; }
+
+#sidebar .widget_awesomeweatherwidget {
+  padding-bottom: 0px; }
+
+/* other potentials:   megaphone:f1ea (3.2) */
+#sidebar .widget_advanced_menu.icon-trophy::before {
+  content: "\F091"; }
+
+#sidebar .widget_advanced_menu.icon-home::before {
+  content: "\F015"; }
+
+#sidebar .widget-recent-post::before {
+  content: "\F005"; }
+
+#sidebar .widget_hcclist::before {
+  content: "\f073"; }
+
+#sidebar .widget_awesomeweatherwidget::before {
+  content: "\f185"; }
+
+#sidebar .widget-zbzdir-list::before,
+#sidebar .widget-zbtlist::before {
+  content: "\f0f2"; }
+
+#sidebar .widget_advanced_menu.icon-trophy::before,
+#sidebar .widget_advanced_menu.icon-home::before,
+#sidebar .widget-recent-post::before,
+#sidebar .widget_hcclist::before,
+#sidebar .widget_awesomeweatherwidget::before,
+#sidebar .widget-zbzdir-list::before,
+#sidebar .widget-zbtlist::before {
+  font-family: FontAwesome;
+  margin-left: -25px;
+  float: left;
+  background-color: #FFFFFF;
+  font-size: 24px;
+  margin-top: 10px; }
+
+#sidebar .widget_awesomeweatherwidget > i,
+#sidebar .widget-zbtlist > i,
+#sidebar .widget_hcclist > i,
+#sidebar #zsfw-authors > i {
+  margin-top: 10px;
+  margin-left: -25px;
+  background-color: #FFFFFF;
+  float: left;
+  font-size: 24px; }
+
+.cc-featured-image-caption {
+  font-size: 12px; }
+
+.cc-featured-image-caption-source {
+  float: right;
+  color: #999;
+  font-style: italic; }
+
+/* *** END sidebar styling *** */
+/* remove body shadow and background*/
+body.site-boxed .site-wrapper {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none; }
+
+body {
+  background-image: none; }
+
+/* aligning main & top navigation */
+@media (min-width: 1155px) {
+  #sf-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; } }
+#nav.prl-navbar #sf-menu {
+  padding-left: 0px; }
+
+.single-post-thumbnail img {
+  width: 100%; }
+
+.wp-caption p.wp-caption-text {
+  padding: 5px; }
+
+.wp-caption.aligncenter {
+  width: 100% !important; }
+
+.wp-caption.alignnone {
+  width: inherit !important; }
+
+.wp-caption {
+  margin-bottom: 15px; }
+
+#sliderTab {
+  background-color: #0D365A; }
+  #sliderTab .slider_content .slider_title {
+    background: linear-gradient(to bottom, transparent 0%, #0D365A 100%); }
+
+.pullquote-left {
+  width: 250px;
+  float: left;
+  position: relative;
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.3em;
+  margin: 15px 15px 15px 0px;
+  text-align: center;
+  font-family: times; }
+
+/* the Author tabs section at bottom of single posts */
+#ts-fab-below div.ts-fab-tabs div.ts-fab-tab {
+  border-color: #DDD; }
+
+#ts-fab-bio-archive {
+  display: block;
+  margin-bottom: 20px;
+  border-color: #DDD; }
+
+/*  tag column page-builder blocks */
+.tag-cat.obits, .archive-cat.obits {
+  width: 100%;
+  height: 20px;
+  border-top: 1px solid #BDBDBD;
+  border-bottom: 1px solid #BDBDBD;
+  margin-top: 3px; }
+
+.tag-cat.obits:before, .archive-cat.obits:before {
+  content: "In Memoriam"; }
+
+.prl-list-category .list-thumbnail {
+  margin-bottom: 0px; }
+
+/* Footer/COPYRIGHT */
+#footer .footer-widget {
+  padding-top: 10px;
+  background-color: #333; }
+  #footer .footer-widget .prl-block-title {
+    border-color: #444;
+    color: #1E73BE;
+    text-align: center;
+    border-top: 0px;
+    font-size: 14px; }
+  #footer .footer-widget .prl-grid-divider:not(:empty) > [class*='prl-span-']:not(.prl-span-12):nth-child(n+2) {
+    border-color: #444; }
+  #footer .footer-widget .prl-span-3 {
+    margin-bottom: 10px; }
+    #footer .footer-widget .prl-span-3 center {
+      padding-bottom: 5px; }
+    #footer .footer-widget .prl-span-3 a {
+      font-size: 14px; }
+#footer .copyright .left {
+  width: auto; }
+
+/* calendar output page  */
+#eai-cal-out .zcal_date_group, #eai-cal-out .zcal_city_group {
+  text-align: center; }
+
+/* my calendar width */
+aside .widget_hcclist h2.widgettitle {
+  border-bottom: 1px solid #DDD;
+  text-align: center;
+  padding-bottom: 10px; }
+aside .widget_hcclist ul.hcc_event_list {
+  padding-left: 0px; }
+  aside .widget_hcclist ul.hcc_event_list li.hcc_event {
+    list-style: none;
+    padding-bottom: 10px; }
+    aside .widget_hcclist ul.hcc_event_list li.hcc_event a .hcc_event_title {
+      line-height: 20px;
+      margin-bottom: 3px;
+      font-size: 14px; }
+
+a.more-about-link:before {
+  content: "More About "; }
+
+/* Shop local boxes */
+.zbzdir-biz {
+  height: 115px; }
+
+.widget-zbzdir-list, .zbzdir-biz-list {
+  width: 100%; }
+
+.widget .textwidget .eia-right-rail,
+.widget .textwidget .eai-right-rail {
+  margin-bottom: 35px;
+  -webkit-box-shadow: 7px 15px 33px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 15px 33px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 15px 33px 0px rgba(0, 0, 0, 0.75); }
+
+.flexslider.gallery_slider {
+  float: left; }
+
+.flexslider .caption {
+  position: initial; }
+
+#emodal-overlay {
+  background-color: rgba(101, 121, 156, 0.72) !important; }
+
+.extra-info {
+  background-color: #f0f0f0;
+  outline-color: #1e73be;
+  outline-width: medium;
+  outline-style: solid;
+  padding: 20px 20px 10px;
+  margin-bottom: 20px; }
+
+.wonderplugingallery-container {
+  clear: both; }
+
+/* responsive iframes */
+.gif-wide {
+  position: relative;
+  padding-bottom: 67%;
+  height: 0;
+  overflow: hidden; }
+  .gif-wide iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.gif-tall {
+  position: relative;
+  padding-bottom: 150%;
+  height: 0;
+  overflow: hidden; }
+  .gif-tall iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+/* responsive video embed zig 10May16 */
+.ea-responsive-container {
+  position: relative;
+  padding-bottom: 50.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 1em; }
+  .ea-responsive-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+/* May 2016 re-design */
+#sliderTab {
+  background-color: #0D365A; }
+
+body.site-boxed .site-wrapper {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none; }
+
+body {
+  background-image: none; }
+
+#nav.prl-navbar .prl-container .nav-wrapper {
+  border-top: none; }
+
+#sidebar .widget_recent_entries, #sidebar .widget_advanced_menu, #sidebar .widget-recent-post, #sidebar .widget_awesomeweatherwidget, #sidebar .widget-zbzdir-list, #sidebar .widget-zbtlist, #sidebar .widget_hcclist, #sidebar #zsfw-authors, #sidebar {
+  border: none; }
+
+#sidebar .widget_advanced_menu.icon-home::before, #sidebar .widget_hcclist::before, #sidebar .widget-zbzdir-list::before, #sidebar .widget-zbtlist::before, #sidebar .widget-recent-post::before {
+  content: none; }
+
+aside .widget .widget-title {
+  border-bottom: none; }
+
+aside .widget_hcclist ul.hcc_event_list li.hcc_event a .hcc_event_title, a.hcc_seeall {
+  font-weight: bold; }
+
+div.hcc_event_venue, div.hcc_event_datetime {
+  color: #484848; }
+
+p {
+  font-size: 15px; }
+
+div.yarpp-related h4, div.yarpp-related-widget h4 {
+  font-weight: bold;
+  text-align: center; }
+
+div.yarpp-related-widget ul {
+  padding-left: 0px; }
+
+span.yarpp-thumbnail img {
+  width: 100%; }
+
+h1 + hr {
+  display: none; }
+
+#footer .footer-widget {
+  background-color: white; }
+
+.footer-widget a {
+  color: #484848; }
+
+#footer .footer-widget .prl-block-title {
+  color: black; }
+
+div.prl-grid prl-grid-divider {
+  border-top: 1px solid #dcdcdc; }
+
+#footer .copyright {
+  background-color: white; }
+
+footer#footer .prl-grid-divider:not(:empty) > [class*='prl-span-']:not(.prl-span-12):nth-child(n+2) {
+  border-left: none; }
+
+#nav.prl-navbar {
+  margin-bottom: 0px; }
+
+.prl-grid > [class*='prl-span-'] {
+  margin-bottom: 10px; }
+
+section#main p a {
+  color: #1e73be; }
+
+div.ccfic a {
+  color: #1e73be; }
+
+div.yarpp-related ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+#aq-template-wrapper-79074 .prl-span-3 {
+  padding-left: 15px;
+  padding-right: 20px; }
+
+.prl-block-title, .comment-reply-title, .yarpp-related-widget h3 {
+  font-family: "Roboto Condensed";
+  border-bottom: none;
+  margin-bottom: 0px;
+  font-size: 15px; }
+
+aside .widget .widget-title, aside .widget .prl-block-title, aside .widget .widget-title a {
+  color: black; }
+
+p, .prl-entry-content li, .single-post-thumbnail-caption {
+  font-family: Vollkorn; }
+
+.prl-entry-content li {
+  font-size: 15px; }
+
+p {
+  font-size: 17px;
+  line-height: 23px; }
+
+#nav.prl-navbar #sf-menu li a {
+  font-size: 18px;
+  font-family: "Roboto Condensed"; }
+
+#topnav a {
+  font-family: "Roboto Condensed";
+  font-size: 14px; }
+
+.ccfic {
+  font-size: 15px; }
+
+p.yarpp-thumbnail-title {
+  font-family: "Roboto Condensed"; }
+
+.wp-caption p.wp-caption-text {
+  font-size: 14px; }
+
+h4.eai-featured-2nd {
+  line-height: 19px; }
+
+aside .widget .widget-title {
+  font-family: "Roboto Condensed"; }
+
+strong:first-child {
+  font-size: 15px; }
+
+/* *** keep this at the end *** */
+/* **** media **** */
