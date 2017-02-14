@@ -406,6 +406,21 @@ aside .widget-zbtlist { /* sytling for text ad's widget on sidebar 123 */
 }
 .sub-category-title {
 	text-align: center;
+
+}
+// signle post navigation (next & previous)
+#ea-blog-nav {
+	.nav-box {
+		max-width: 200px;
+		display: inline-block;
+		i.fa {
+			font-size: 2em;
+		}
+	}
+	.nav-box.next {
+		text-align: right;
+		float: right;
+	}
 }
 
 /* *** smug mug widget styling *** */

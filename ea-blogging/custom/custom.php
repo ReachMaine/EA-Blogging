@@ -20,29 +20,30 @@ global $theme_url, $image;
 // next & previous navigation on single posts //
 if (!function_exists('ea_blog_nav')) {
 	function ea_blog_nav() {
-		$html_out = "";
+
 		$prevPost = get_previous_post(true);
 		$nextPost = get_next_post(true);
-		$html_out .= "<!-- <p>next is: ".$nextPost->ID."</p> -->";
-		$html_out .= "<!-- <p>prev is: ".$prevPost->ID."</p> -->";
+		echo "<!-- <p>next is: ".$nextPost->ID."</p> -->";
+		echo "<!-- <p>prev is: ".$prevPost->ID."</p> -->";
 		if ($prevPost || $nextPost) {
-			$html_out .= '<div id="ea-blog-nav" class="navigation">';
+			echo '<hr class="prl-grid-divider">';
+			echo '<div id="ea-blog-nav" class="navigation">';
 			if ($prevPost) {
-				$html_out .='<div class="nav-box previous">' ;
+				echo'<div class="nav-box previous">' ;
 					$prevthumbnail = get_the_post_thumbnail($prevPost->ID, array(100,100) );
-					$html_out .= previous_post_link('%link',$prevthumbnail.'<h6>%title</h6><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>', false);
-				$html_out .= '</div>';
+				echo previous_post_link('%link',$prevthumbnail.'<h6>%title</h6><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>', TRUE /* in category */);
+				echo '</div>';
 
 		 	}
 
 			if ($nextPost) {
-				$html_out .= '<div class="nav-box next" >';
+				echo '<div class="nav-box next" >';
 					$nextthumbnail = get_the_post_thumbnail($nextPost->ID, array(100,100) );
-				 	$html_out .= next_post_link('%link',$nextthumbnail.'<h6>%title</h6><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>', false);
-				$html_out .= '</div>';
+				echo next_post_link('%link',$nextthumbnail.'<h6>%title</h6><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>', TRUE /* in category */);
+				echo '</div>';
  			}
-			$html_out .= '</div><!--#cooler-nav div -->';
-		} else { $html_out .= '<!-- nothing next or previous -->'; }
+			echo '</div><!--#cooler-nav div -->';
+		} else { echo '<!-- nothing next or previous -->'; }
 		return $html_out;
 	}  // end function ea_blog_nav()
 }
