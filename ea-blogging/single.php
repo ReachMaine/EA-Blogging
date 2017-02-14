@@ -65,7 +65,8 @@
 						   	} */ ?>
 						   <?php /* embed_related_content(); echo '<!-- content -->'.$content; */ ?>
 						   <?php /* zig 23Aug16 ++ */ the_content(); ?>
-
+                           <!-- here zig -->
+                           <?php if (function_exists('ea_blog_nav')) { echo ea_blog_nav(); } ?>
 						   <?php wp_link_pages(array('before' => __('Pages','presslayer').': ', 'next_or_number' => 'number')); ?>
 						   <?php edit_post_link(__('Edit','presslayer'),'<p>','</p>'); ?>
 

@@ -1,5 +1,6 @@
 <?php
   require_once(get_stylesheet_directory().'/custom/branding.php');
+  require_once(get_stylesheet_directory().'/custom/custom.php');
   add_action('after_setup_theme', 'ea_setup');
   function ea_setup() {
     /* add the topnav menu block */

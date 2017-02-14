@@ -1,6 +1,7 @@
 <?php /*
 	Mods:
 		13Feb16 zig - copy from EA for blogging spoke of multisite
+		14Feb16 zig - move top banner to above masthead
 */
 global $theme_url, $prl_data; ?>
 <!DOCTYPE html>
@@ -63,6 +64,8 @@ $body_class = array('Boxed'=>'site-boxed', 'Wide'=>'site-wide');
 
 		<header id="masthead" class="clearfix">
 			<div class="prl-container">
+				<?php  /* move banner ad to top */
+				 	if (isset($prl_data['banner_top_cat']) && $prl_data['banner_top_cat']!='') echo '<div id="archive-top-ad" class=prl-span-12> <div class="ads_top ad-container">'.stripslashes($prl_data['banner_top_cat']).'</div></div>';  ?>
 				<?php /* search box moved to top  hidden at tablet size*/ ?>
 				<?php if($prl_data['header_search_btn']!='Disable'):?>
 				<div class="prl-nav-flip-top hidden-tablet">

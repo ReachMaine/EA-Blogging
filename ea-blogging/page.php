@@ -1,18 +1,13 @@
 <?php /*
 	mods:
     13Feb16 zig - copy from EA
+    14Feb16 zig - remove header add (moved to header)
 */
 ?>
 <?php get_header();?>
 <div class="prl-container">
     <div class="prl-grid prl-grid-divider">
-    	<?php  if (isset($prl_data['banner_top_cat']) && $prl_data['banner_top_cat']!='') echo '<div id="archive-top-ad" class=prl-span-12> <div class="ads_top ad-container">'.stripslashes($prl_data['banner_top_cat']).'</div></div>';  ?>
             <section id="main" class="prl-span-9">
-        	<?php if (is_active_sidebar('breaking-news')) {
-	    		echo '<div class="eai-breaking-news prl-span-12">';
-	    		dynamic_sidebar( 'breaking-news' );
-	    		echo '</div>';
-	    	} else { /* echo '<!-- no breaking news right now -->'; */ } ?>
 		   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		   <article id="post-<?php the_ID(); ?>" <?php post_class('article-single clearfix'); ?>>
 			   <?php if ( has_post_thumbnail() && (get_post_meta($post->ID, 'pl_post_thumb', true)!='disable') ):?>
