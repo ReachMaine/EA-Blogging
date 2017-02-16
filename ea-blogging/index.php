@@ -53,7 +53,7 @@ get_header();?>
  		//assert( "locate_template( array('content-archive-liv-index.php', 'content-archive-liv.php'), true, false )" );
 ?>
 		<?php if(is_category() && isset($prl_data['banner_bot_cat']) && $prl_data['banner_bot_cat']!='') echo '<div class="ads_bottom prl-panel hide-tablet"><div class="ad-container ad-in-content">'.stripslashes($prl_data['banner_bot_cat']).'</div></div>';?>
-		<p>index.php archive style = {<?php echo $archive_style; ?>}</p>
+		<?php /* <p>index.php archive style = {<?php echo $archive_style; ?>}</p> */ ?>
 		</section>
         <aside id="sidebar" class="prl-span-3">
             <?php get_sidebar();?>
