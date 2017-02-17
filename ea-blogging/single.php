@@ -3,7 +3,7 @@
  */
 ?>
 <?php get_header();?>
-<div class="prl-container">
+<div id="content" class="prl-container">
     <div class="prl-grid prl-grid-divider">
     	<?php /* if(isset($prl_data['banner_before_single_title']) && $prl_data['banner_before_single_title']!='') echo '<div id="single-top-ad" class="prl-span-12"> <div class="ads_top ad-container">'.stripslashes($prl_data['banner_before_single_title']).'</div></div>'; */ ?>
     	<?php if (is_active_sidebar('topbanner')) {

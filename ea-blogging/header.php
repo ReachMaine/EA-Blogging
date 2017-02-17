@@ -96,26 +96,20 @@ $body_class = array('Boxed'=>'site-boxed', 'Wide'=>'site-wide');
 				</nav>
 
 			</div> <?php /* end pr1-container for top menu & search */ ?>
-			<div class="prl-container top-header"><div class="masthead-bg clearfix">
+			<div class="masthead-bg clearfix">
 				<div class="prl-header-logo"><a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo sitelogo();?>" alt="<?php bloginfo('name'); ?>" /></a>
+				<div class="prl-container top-header">
+					<div class="prl-header-left">
+						<?php  if($prl_data['header_custom_text']!=''){?>
+							<span class="prl-header-custom-text"><?php echo trim($prl_data['header_custom_text']);?></span>
+						<?php  } ?>
+					</div>
+					<div class="prl-header-mid">
+					</div>
+					<div class="prl-header-right">
+					</div>
+				<?php /*  </div> */ ?>
 				</div>
-				<div class="prl-header-mid">
-					<?php  if($prl_data['header_custom_text']!=''){?>
-					<span class="prl-header-custom-text"><?php echo trim($prl_data['header_custom_text']);?></span>
-					<?php  } if($prl_data['header_time']!='Disable'){  $current_site = get_current_site(); ?>
-					<span class="prl-header-time"><a href="http://www.reachdowneast.com/calendar/events/today/"><i class="fa fa-calendar"></i><?php echo date('l');?> - <?php echo date('M d, Y');?></a></span>
-					<?php } ?>
-				</div>
-				<div class="prl-header-social">
-					<?php if($prl_data['header_facebook']!=''){?><a href="<?php echo $prl_data['header_facebook'];?>" class="fa fa-facebook" title="Facebook" target="_blank"></a><?php }?>
-					<?php if($prl_data['header_twitter']!=''){?><a href="https://twitter.com/<?php echo $prl_data['header_twitter'];?>" class="fa fa-twitter" title="Twitter" target="_blank"></a><?php }?>
-					<?php if($prl_data['header_pinterest']!=''){?><a href="http://www.pinterest.com/<?php echo $prl_data['header_pinterest'];?>" class="fa fa-pinterest" title="Pinterest" target="_blank"></a><?php }?>
-					<?php if($prl_data['header_google_plus']!=''){?><a href="<?php echo $prl_data['header_google_plus'];?>" class="fa fa-google-plus" title="Google plus"></a><?php }?>
-					<?php if($prl_data['header_linkedin']!=''){?><a href="<?php echo $prl_data['header_linkedin'];?>" class="fa fa-linkedin" title="LinkedIn"></a><?php }?>
-                    <?php if($prl_data['header_instagram']!=''){?><a href="<?php echo $prl_data['header_instagram'];?>" class="fa fa-instagram" title="Instagram"></a><?php }?>
-                    <?php if($prl_data['header_youtube']!=''){?><a href="<?php echo $prl_data['header_youtube'];?>" class="youtube-pic" title="Youtube"><img src="<?php echo get_stylesheet_directory_uri().'/images/youtube.jpg'; ?>"></a><?php }?>
-				</div><!-- end of header social -->
-			<?php /*  </div> */ ?>
 			</div>
 		</header>
 		<nav id="nav" class="prl-navbar" role="navigation">

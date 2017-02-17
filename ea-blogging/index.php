@@ -6,7 +6,7 @@
 	8Oct2014 zig - add div class="ad-container" to bottom ad for styling.
 */
 get_header();?>
-<div class="prl-container">
+<div id="content" class="prl-container">
     <div class="prl-grid prl-grid-divider">
 
     	<?php if (is_active_sidebar('topbanner')) {

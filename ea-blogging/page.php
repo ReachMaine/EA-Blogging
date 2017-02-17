@@ -5,7 +5,7 @@
 */
 ?>
 <?php get_header();?>
-<div class="prl-container">
+<div id="content" class="prl-container">
     <div class="prl-grid prl-grid-divider">
             <section id="main" class="prl-span-9">
 		   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
