@@ -47,3 +47,41 @@ if (!function_exists('ea_blog_nav')) {
 		return $html_out;
 	}  // end function ea_blog_nav()
 }
+
+	function ea_header_logo() {
+
+		$do_special_header = false;
+		if (is_category() || is_single() ){
+			if (is_category()  ) {
+				$thisCat = get_category(get_query_var('cat'),false);
+			}
+			if ( is_single() ) {
+				echo "<p>single</p>";
+				$thiscat = get_post_meta( get_the_id(), '_yoast_wpseo_primary_category', true ); // yoast's primary category
+				if (!$thiscat) {
+					echo "<p>No primary</p>";
+					$cats = get_the_category();
+					echo "<pre>"; var_dump($cats); echo "</pre>";
+					if (is_array($cats)) {
+						$thiscat = $cats[0]->term_id;
+					}
+				}
+			}
+			if ($thisCat) {
+				echo "<p> thisCat is:".$thisCat."</p>";
+				if (function_exists('wp_get_terms_meta'))  {
+					$cat_background_image = wp_get_terms_meta($thisCat, 'blog-image' ,true);
+					$cat_subtitle = wp_get_terms_meta($thisCat, 'subtitle' ,true);
+					$do_special_header = true;
+				} else {
+					echo "<p>no function</p>";
+				}
+			}
+		}
+		if ($do_special_header) {
+			echo "<p>yep</p>";
+		} else {
+			echo "<p>nope.<p>";
+		}
+
+	}
