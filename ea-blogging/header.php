@@ -97,18 +97,20 @@ $body_class = array('Boxed'=>'site-boxed', 'Wide'=>'site-wide');
 
 			</div> <?php /* end pr1-container for top menu & search */ ?>
 			<div class="masthead-bg clearfix">
-				<div class="prl-header-logo"><a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo sitelogo();?>" alt="<?php bloginfo('name'); ?>" /></a>
-				<div class="prl-container top-header">
-					<div class="prl-header-left">
-						<?php  if($prl_data['header_custom_text']!=''){?>
-							<span class="prl-header-custom-text"><?php echo trim($prl_data['header_custom_text']);?></span>
-						<?php  } ?>
-					</div>
-					<div class="prl-header-mid">
-					</div>
-					<div class="prl-header-right">
-					</div>
-				<?php /*  </div> */ ?>
+				<div class="prl-header-logo">
+					<a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo sitelogo();?>" alt="<?php bloginfo('name'); ?>" /></a>
+				</div>
+
+			</div>
+			<div class="prl-container top-header">
+				<div class="prl-header-left">
+					<?php  if($prl_data['header_custom_text']!=''){?>
+						<span class="prl-header-custom-text"><?php echo trim($prl_data['header_custom_text']);?></span>
+					<?php  } ?>
+				</div>
+				<div class="prl-header-mid">
+				</div>
+				<div class="prl-header-right">
 				</div>
 			</div>
 		</header>

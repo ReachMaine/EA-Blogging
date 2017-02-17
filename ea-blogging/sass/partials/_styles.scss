@@ -32,7 +32,6 @@ header#masthead {
 			}
 		}
 	}
-	.prl-container{
 		.masthead-bg {
 			background-color: white;
 			line-height: 30px;
@@ -47,50 +46,21 @@ header#masthead {
 					height: 40px;
 				}
 			}
-			.prl-header-mid {
-				float: left;
-				padding-left: 35%;
-				color: $fontcolor;
-				.prl-header-time {
-					margin-left: 0px;
-					.fa.fa-calendar {
-						padding-right: 10px;
+			.top-header {
+				.prl-header-left {
+					max-height: 30px;
+					img {
+						height: inherit;
 					}
 				}
 
-			}
-			.prl-header-social {
-				float:right;
-				a.fa.fa-facebook {
-					color: #3664A2;
-				}
-				a.fa.fa-twitter {
-					color: #55ACEE;
-				}
-				a.youtube-pic img {
-					vertical-align: middle;
-				}
+
 			}
 		}
-	}
 
 }
-#search_form-top.nav_search {
-  display: block; }
 
-#search_form.nav_search {
-  display: none;
-}
 
-#search_form.nav_search input,
-#search_form-top.nav_search input {
-  border: 1px solid #dddddd;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
-  min-width: 40px;
-}
 
 #nav.prl-navbar {
 	margin-bottom: 15px;
