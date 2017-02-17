@@ -1,4 +1,3 @@
-@import url("../original/style.css");
 /*
 Theme Name: ea-blogging
 Description: original Child Theme for Ellsworth American blogging
@@ -6,6 +5,7 @@ Author: Reach Maine
 Template: original
 Version: 1.2
 */
+@import url("../original/style.css");
 /* ----------- Colors ---------------------------------- */
 /* ----------- end Colors ----------- */
 /* ----------- Typography ------------------------------- */
@@ -68,7 +68,7 @@ header#masthead .prl-container .masthead-bg {
   header#masthead .prl-container .masthead-bg .prl-header-mid {
     float: left;
     padding-left: 35%;
-    color: #333333; }
+    color: #333; }
     header#masthead .prl-container .masthead-bg .prl-header-mid .prl-header-time {
       margin-left: 0px; }
       header#masthead .prl-container .masthead-bg .prl-header-mid .prl-header-time .fa.fa-calendar {
@@ -100,7 +100,7 @@ header#masthead .prl-container .masthead-bg {
 #nav.prl-navbar {
   margin-bottom: 15px; }
   #nav.prl-navbar .prl-container .nav-wrapper {
-    border-top: 1px solid #dddddd; }
+    border-top: 1px solid #DDD; }
   #nav.prl-navbar #sf-menu {
     padding-left: 5%; }
   #nav.prl-navbar #sf-menu li a {
@@ -122,7 +122,7 @@ header#masthead .prl-container .masthead-bg {
   .eai-breaking-news .mtphr-dnt-title {
     margin-bottom: 0px;
     padding-bottom: 1px;
-    border-bottom: 1px solid #cccccc; }
+    border-bottom: 1px solid #CCC; }
   .eai-breaking-news .mtphr-dnt-tick-container .mtphr-dnt-tick-contents {
     padding-top: 4px;
     /*make text line up with header  */
@@ -162,7 +162,7 @@ header#masthead .prl-container .masthead-bg {
     .yarpp-thumbnails-vertical .yarpp-related ul li:not(:last-child) {
       padding-bottom: 5px;
       margin-bottom: 5px;
-      border-bottom: 1px solid #bdbdbd; }
+      border-bottom: 1px solid #BDBDBD; }
     .yarpp-thumbnails-vertical .yarpp-related ul li .yarpp-thumbnail img {
       margin-top: 5px; }
 
@@ -232,7 +232,7 @@ a.eai-more-link {
 
 aside .widget .widget-title {
   /* copied from .prl-block-title */
-  color: #1e73be;
+  color: #1E73BE;
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
@@ -243,7 +243,7 @@ aside .widget .widget-title {
   text-transform: uppercase;
   margin-bottom: 15px; }
   aside .widget .widget-title a {
-    color: #1e73be; }
+    color: #1E73BE; }
 
 aside .widget .widget-title,
 aside .widget .prl-block-title {
@@ -260,7 +260,7 @@ aside .widget-zbtlist {
     padding-left: 0px; }
     aside .widget-zbtlist ul.zbzdir-biz-list li:not(:last-child),
     aside .widget-zbtlist ul.zbt-ad-list li:not(:last-child) {
-      border-bottom: 1px solid #dddddd; }
+      border-bottom: 1px solid #DDD; }
     aside .widget-zbtlist ul.zbzdir-biz-list .zbt-title,
     aside .widget-zbtlist ul.zbt-ad-list .zbt-title {
       font-size: 14px;
@@ -275,7 +275,7 @@ aside .widget-zbtlist {
 
 .biz-today.horizontal aside.widget-zbtlist {
   float: left;
-  border-bottom: 1px solid #dddddd; }
+  border-bottom: 1px solid #DDD; }
   .biz-today.horizontal aside.widget-zbtlist .widget-title {
     text-align: center; }
   .biz-today.horizontal aside.widget-zbtlist ul.zbzdir-list,
@@ -284,7 +284,7 @@ aside .widget-zbtlist {
     padding-left: 0px; }
     .biz-today.horizontal aside.widget-zbtlist ul.zbzdir-list li,
     .biz-today.horizontal aside.widget-zbtlist ul.zbt-ad-list li {
-      border-left: 1px solid #dddddd;
+      border-left: 1px solid #DDD;
       width: 30%;
       float: left;
       padding-left: 2%;
@@ -314,14 +314,14 @@ aside .widget-zbtlist {
 
 .biz-today.horizontal aside.widget-zbzdir-list {
   float: left;
-  border-bottom: 1px solid #dddddd; }
+  border-bottom: 1px solid #DDD; }
   .biz-today.horizontal aside.widget-zbzdir-list .widget-title {
     text-align: center; }
   .biz-today.horizontal aside.widget-zbzdir-list ul.zbzdir-biz-list {
     float: left;
     padding-left: 0px; }
     .biz-today.horizontal aside.widget-zbzdir-list ul.zbzdir-biz-list li {
-      border-left: 1px solid #dddddd;
+      border-left: 1px solid #DDD;
       width: 30%;
       float: left;
       padding-left: 2%;
@@ -377,7 +377,7 @@ aside .widget-zbtlist {
 #sidebar .widget-zbtlist,
 #sidebar .widget_hcclist,
 #sidebar #zsfw-authors {
-  border: 2px solid gray;
+  border: 2px solid #808080;
   margin-left: -15px;
   padding-left: 15px;
   margin-right: -15px;
@@ -419,7 +419,7 @@ aside .widget-zbtlist {
   font-family: FontAwesome;
   margin-left: -25px;
   float: left;
-  background-color: white;
+  background-color: #FFFFFF;
   font-size: 24px;
   margin-top: 10px; }
 
@@ -429,7 +429,7 @@ aside .widget-zbtlist {
 #sidebar #zsfw-authors > i {
   margin-top: 10px;
   margin-left: -25px;
-  background-color: white;
+  background-color: #FFFFFF;
   float: left;
   font-size: 24px; }
 
@@ -438,7 +438,7 @@ aside .widget-zbtlist {
 
 .cc-featured-image-caption-source {
   float: right;
-  color: #999999;
+  color: #999;
   font-style: italic; }
 
 /* *** END sidebar styling *** */
@@ -449,7 +449,13 @@ body.site-boxed .site-wrapper {
   -moz-box-shadow: none; }
 
 body {
-  background-image: none; }
+  background-image: url("http://www.reachdowneast.com/blogs/wp-content/themes/ea-blogging/images/ea-blog-background.jpg");
+  background-attachment: fixed;
+  background-position: center bottom; }
+
+/* masthead */
+header#masthead {
+  padding-top: 20px; }
 
 /* aligning main & top navigation */
 @media (min-width: 1155px) {
@@ -476,9 +482,9 @@ body {
   margin-bottom: 15px; }
 
 #sliderTab {
-  background-color: #0d365a; }
+  background-color: #0D365A; }
   #sliderTab .slider_content .slider_title {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #0d365a 100%); }
+    background: linear-gradient(to bottom, transparent 0%, #0D365A 100%); }
 
 .pullquote-left {
   width: 250px;
@@ -504,8 +510,8 @@ body {
 .tag-cat.obits, .archive-cat.obits {
   width: 100%;
   height: 20px;
-  border-top: 1px solid #bdbdbd;
-  border-bottom: 1px solid #bdbdbd;
+  border-top: 1px solid #BDBDBD;
+  border-bottom: 1px solid #BDBDBD;
   margin-top: 3px; }
 
 .tag-cat.obits:before, .archive-cat.obits:before {
@@ -517,10 +523,10 @@ body {
 /* Footer/COPYRIGHT */
 #footer .footer-widget {
   padding-top: 10px;
-  background-color: #333333; }
+  background-color: #333; }
   #footer .footer-widget .prl-block-title {
     border-color: #444;
-    color: #1e73be;
+    color: #1E73BE;
     text-align: center;
     border-top: 0px;
     font-size: 14px; }
@@ -566,10 +572,7 @@ a.more-about-link:before {
 
 .widget .textwidget .eia-right-rail,
 .widget .textwidget .eai-right-rail {
-  margin-bottom: 35px;
-  -webkit-box-shadow: 7px 15px 33px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 7px 15px 33px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 7px 15px 33px 0px rgba(0, 0, 0, 0.75); }
+  margin-bottom: 35px; }
 
 .flexslider.gallery_slider {
   float: left; }
@@ -640,13 +643,10 @@ body.site-boxed .site-wrapper {
   -webkit-box-shadow: none;
   -moz-box-shadow: none; }
 
-body {
-  background-image: none; }
-
 #nav.prl-navbar .prl-container .nav-wrapper {
   border-top: none; }
 
-#sidebar .widget_recent_entries, #sidebar .widget_advanced_menu, #sidebar .widget-recent-post, #sidebar .widget_awesomeweatherwidget, #sidebar .widget-zbzdir-list, #sidebar .widget-zbtlist, #sidebar .widget_hcclist, #sidebar #zsfw-authors, #sidebar {
+#sidebar .widget_recent_entries, #sidebar .widget_advanced_menu, #sidebar .widget-recent-post, #sidebar .widget_awesomeweatherwidget, #sidebar .widget-zbzdir-list, #sidebar .widget-zbtlist, #sidebar .widget_hcclist, #sidebar #zsfw-authors, #sidebar, h5.prl-block-title {
   border: none; }
 
 #sidebar .widget_advanced_menu.icon-home::before, #sidebar .widget_hcclist::before, #sidebar .widget-zbzdir-list::before, #sidebar .widget-zbtlist::before, #sidebar .widget-recent-post::before {
@@ -678,7 +678,8 @@ h1 + hr {
   display: none; }
 
 #footer .footer-widget {
-  background-color: white; }
+  background-color: white;
+  border-top: 4px solid black; }
 
 .footer-widget a {
   color: #484848; }
@@ -688,9 +689,6 @@ h1 + hr {
 
 div.prl-grid prl-grid-divider {
   border-top: 1px solid #dcdcdc; }
-
-#footer .copyright {
-  background-color: white; }
 
 footer#footer .prl-grid-divider:not(:empty) > [class*='prl-span-']:not(.prl-span-12):nth-child(n+2) {
   border-left: none; }

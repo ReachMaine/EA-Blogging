@@ -21,7 +21,14 @@ body.site-boxed .site-wrapper {
 }
 
 body {
-	background-image: none;
+	background-image: url("http://www.reachdowneast.com/blogs/wp-content/themes/ea-blogging/images/ea-blog-background.jpg");
+	background-attachment: fixed;
+	background-position: center bottom;
+}
+
+/* masthead */
+header#masthead {
+	padding-top: 20px;
 }
 
 /* aligning main & top navigation */
@@ -212,9 +219,9 @@ a.more-about-link:before  {
 	//padding-bottom: 15px;
 	//Swidth: 300px;
 	margin-bottom: 35px;
-	-webkit-box-shadow: 7px 15px 33px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 7px 15px 33px 0px rgba(0,0,0,0.75);
-	box-shadow: 7px 15px 33px 0px rgba(0,0,0,0.75);
+	//-webkit-box-shadow: 7px 15px 33px 0px rgba(0,0,0,0.75);
+	//-moz-box-shadow: 7px 15px 33px 0px rgba(0,0,0,0.75);
+	//box-shadow: 7px 15px 33px 0px rgba(0,0,0,0.75);
 }
 .flexslider.gallery_slider {
 	float: left;
@@ -297,15 +304,11 @@ body.site-boxed .site-wrapper {
 	-moz-box-shadow: none;
 }
 
-body {
-	background-image: none;
-}
-
 #nav.prl-navbar .prl-container .nav-wrapper {
 border-top: none;
 }
 
-#sidebar .widget_recent_entries, #sidebar .widget_advanced_menu, #sidebar .widget-recent-post, #sidebar .widget_awesomeweatherwidget, #sidebar .widget-zbzdir-list, #sidebar .widget-zbtlist, #sidebar .widget_hcclist, #sidebar #zsfw-authors, #sidebar {
+#sidebar .widget_recent_entries, #sidebar .widget_advanced_menu, #sidebar .widget-recent-post, #sidebar .widget_awesomeweatherwidget, #sidebar .widget-zbzdir-list, #sidebar .widget-zbtlist, #sidebar .widget_hcclist, #sidebar #zsfw-authors, #sidebar, h5.prl-block-title {
 border: none;
 }
 
@@ -348,6 +351,7 @@ display: none;
 
 #footer .footer-widget {
 background-color: white;
+border-top: 4px solid black;
 }
 
 .footer-widget a {
@@ -360,10 +364,6 @@ color: black;
 
 div.prl-grid prl-grid-divider {
 border-top: 1px solid #dcdcdc;
-}
-
-#footer .copyright {
-background-color: white;
 }
 
 footer#footer .prl-grid-divider:not(:empty)>[class*='prl-span-']:not(.prl-span-12):nth-child(n+2) {
