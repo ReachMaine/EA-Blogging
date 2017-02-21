@@ -688,7 +688,8 @@ div.yarpp-related ul {
   padding-right: 20px; }
 
 h1, h1 a, h2, h3, h4, h5 {
-  font-family: bold; }
+  font-family: Buenard !important;
+  font-weight: bold; }
 
 .prl-block-title, .comment-reply-title, .yarpp-related-widget h3 {
   font-family: Buenard;
