@@ -399,8 +399,12 @@ div.yarpp-related ul {
 
 // TYPOGRAPHY
 
+h1, h1 a, h2, h3, h4, h5 {
+	font-family: bold;
+}
+
 .prl-block-title, .comment-reply-title, .yarpp-related-widget h3 {
-	font-family: "Roboto Condensed";
+	font-family: Buenard;
 	border-bottom: none;
 	margin-bottom: 0px;
 	font-size: 15px;
@@ -412,7 +416,7 @@ color: black;
 }
 
 p, .prl-entry-content li, .single-post-thumbnail-caption {
-	font-family: Vollkorn;
+	font-family: Buenard;
 }
 
 .prl-entry-content li {
@@ -426,11 +430,11 @@ p {
 
 #nav.prl-navbar #sf-menu li a {
 	font-size: 18px;
-	font-family: "Roboto Condensed";
+	font-family: Buenard;
 }
 
 #topnav a {
-	font-family: "Roboto Condensed";
+	font-family: Buenard;
 	font-size: 14px;
 }
 
@@ -439,7 +443,7 @@ p {
 }
 
 p.yarpp-thumbnail-title { //Related posts titles
-	font-family: "Roboto Condensed"
+	font-family: Buenard;
 }
 
 .wp-caption p.wp-caption-text {
@@ -451,7 +455,7 @@ h4.eai-featured-2nd {
 }
 
 aside .widget .widget-title {
-	font-family: "Roboto Condensed";
+	font-family: Buenard;
 }
 
 strong:first-child { //dateline in posts smaller

@@ -24,8 +24,7 @@ global $theme_url, $prl_data; ?>
 	<?php if($prl_data['site_fav']!='') {?>
 	<link rel="shortcut icon" href="<?php echo trim($prl_data['site_fav']);?>">
 	<?php } ?>
-
-<link href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,700,700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Buenard:400,700" rel="stylesheet">
 <script data-cfasync="false" type="text/javascript" src="//cdn.broadstreetads.com/init.js"></script>
 <?php
 	if (!is_singular('post') ) { 	?>
