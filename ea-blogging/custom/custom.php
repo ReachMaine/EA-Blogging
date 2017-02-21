@@ -49,39 +49,49 @@ if (!function_exists('ea_blog_nav')) {
 }
 
 	function ea_header_logo() {
-
+		$thisCatID = 0;
 		$do_special_header = false;
 		if (is_category() || is_single() ){
 			if (is_category()  ) {
 				$thisCat = get_category(get_query_var('cat'),false);
-			}
+				$thisCatID = $thisCat->term_id;
+				$thisCatTitle = $thisCat->name;
+			}// end is_cat.
+
 			if ( is_single() ) {
-				echo "<p>single</p>";
-				$thiscat = get_post_meta( get_the_id(), '_yoast_wpseo_primary_category', true ); // yoast's primary category
-				if (!$thiscat) {
-					echo "<p>No primary</p>";
+				$thisCatID = get_post_meta( get_the_id(), '_yoast_wpseo_primary_category', true ); // yoast's primary category
+				if (!$thisCatID) {
 					$cats = get_the_category();
-					echo "<pre>"; var_dump($cats); echo "</pre>";
-					if (is_array($cats)) {
-						$thiscat = $cats[0]->term_id;
+					if ($cats) {
+						$thisCatID = $cats[0]->term_id;
+						$thisCatTitle = $cats[0]->name;
 					}
 				}
-			}
-			if ($thisCat) {
-				echo "<p> thisCat is:".$thisCat."</p>";
+			} // end is_single
+
+			if ($thisCatID) {
 				if (function_exists('wp_get_terms_meta'))  {
-					$cat_background_image = wp_get_terms_meta($thisCat, 'blog-image' ,true);
-					$cat_subtitle = wp_get_terms_meta($thisCat, 'subtitle' ,true);
+					$cat_background_image = wp_get_terms_meta($thisCatID, 'blog-image' ,true);
+					$cat_subtitle = wp_get_terms_meta($thisCatID, 'subtitle' ,true);
 					$do_special_header = true;
-				} else {
-					echo "<p>no function</p>";
 				}
 			}
 		}
+		// ok what do we do???
 		if ($do_special_header) {
-			echo "<p>yep</p>";
+			echo '<div class="prl-header-logo" style="background-image:url('.$cat_background_image.')">';
+			echo '<h1 class="ea-blog-title">'.$thisCatTitle.'</h1>';
+			//echo '<a href="'.get_home_url().'" title="'.get_bloginfo('name').'"><img src="'.$cat_background_image.'" alt="'.get_bloginfo('name').'" /></a>';
+			if ($cat_subtitle) {
+				echo '<div class="ea-blog-subtitle">';
+				echo '<h6>'.$cat_subtitle.'</h6>';
+				echo '</div>';
+			}
+			echo '</div>';
 		} else {
-			echo "<p>nope.<p>";
+			echo '<div class="prl-header-logo">';
+				echo '<a href="'.get_home_url().'" title="'.get_bloginfo('name').'"><img src="'.sitelogo().'" alt="'.get_bloginfo('name').'" /></a>';
+			echo '</div>';
 		}
 
-	}
+	} // end of ea_header_logo

@@ -96,17 +96,14 @@ $body_class = array('Boxed'=>'site-boxed', 'Wide'=>'site-wide');
 
 			</div> <?php /* end pr1-container for top menu & search */ ?>
 			<div class="masthead-bg clearfix">
-				<?php /* ea_header_logo(); */ ?>
-				<div class="prl-header-logo">
-					<a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo sitelogo();?>" alt="<?php bloginfo('name'); ?>" /></a>
-				</div>
-
+				<?php  ea_header_logo(); /* display appropiate header */ ?>
 			</div>
 			<div class="prl-container top-header">
 				<div class="prl-header-left">
 					<?php  if($prl_data['header_custom_text']!=''){?>
 						<span class="prl-header-custom-text"><?php echo trim($prl_data['header_custom_text']);?></span>
 					<?php  } ?>
+					<img src="<?php bloginfo('url')?>/wp-content/themes/ea-blogging/images/ea_logo-sm.jpg"
 				</div>
 				<div class="prl-header-mid">
 				</div>
