@@ -32,9 +32,6 @@
 	<?php if($prl_data['switcher']=='Enable') include ('_switcher/index.php');?>
 	<a id="toTop" href="#"><i class="fa fa-long-arrow-up"></i></a>
 
-	<?php /* 29Aug16 zig try moving to after body tag -<script data-cfasync="false" type="text/javascript" src="http://ellsworthamerican.me.pw.newsmemory.com/include.php"></script> */ ?>
-	<?php /* technavia footer script */ ?>
-
 	<?php wp_footer();?>
 	<?php echo stripslashes($prl_data['google_analytics']); ?>
 	<?php /* <script defer=defer type="text/javascript">broadstreet.zone(39775);</script> */ ?>

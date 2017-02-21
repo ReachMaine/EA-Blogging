@@ -57,7 +57,7 @@ $body_class = array('Boxed'=>'site-boxed', 'Wide'=>'site-wide');
 <body <?php body_class($body_class[$prl_data['site_style']]); ?>>
 <?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
 <?php /* 29Aug16 zig - put technavia script here....*/ ?>
-<script data-cfasync="false" type="text/javascript" src="http://ellsworthamerican.me.pw.newsmemory.com/include.php"></script>
+<?php /* <script data-cfasync="false" type="text/javascript" src="http://ellsworthamerican.me.pw.newsmemory.com/include.php"></script> */ ?>
 <div class="site-wrapper">
     <!--<div class="prl-container">-->
 
@@ -103,7 +103,7 @@ $body_class = array('Boxed'=>'site-boxed', 'Wide'=>'site-wide');
 					<?php  if($prl_data['header_custom_text']!=''){?>
 						<span class="prl-header-custom-text"><?php echo trim($prl_data['header_custom_text']);?></span>
 					<?php  } ?>
-					<img src="<?php bloginfo('url')?>/wp-content/themes/ea-blogging/images/ea_logo-sm.jpg"
+					<a href="//www.ellsworthamerican.com/"><img src="<?php bloginfo('url')?>/wp-content/themes/ea-blogging/images/ea_logo-sm.jpg"></a>
 				</div>
 				<div class="prl-header-mid">
 				</div>
