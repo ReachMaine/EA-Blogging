@@ -84,6 +84,17 @@ header#masthead {
 #nav.prl-navbar #sf-menu {
 	padding-left: 0px;
 }
+
+// Space between menu and content as well as blog description and posts
+
+#offcanvas ~ .prl-container {
+	padding-top: 20px;
+}
+
+.prl-archive-title ~ .prl-grid.prl-grid-divider {
+	padding-top: 10px;
+}
+
 //////////////
 
 .single-post-thumbnail img {
@@ -448,6 +459,13 @@ div.yarpp-related ul {
 }
 
 // TYPOGRAPHY
+
+h3.prl-archive-title {
+	color: black;
+	font-weight: bold;
+	font-size: 36px;
+	border-bottom: none;
+}
 
 h1, h1 a, h2, h3, h4, h5 {
 	font-family: Buenard !important;
