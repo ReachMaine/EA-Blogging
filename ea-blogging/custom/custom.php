@@ -79,14 +79,16 @@ if (!function_exists('ea_blog_nav')) {
 		}
 		// ok what do we do???
 		if ($do_special_header) {
-			echo '<div class="prl-header-logo" style="background-image:url('.$cat_background_image.')">';
-			echo '<a href="'.get_home_url().'" title="'.get_bloginfo('name').'"><h1 class="ea-blog-title">'.$thisCatTitle.'</h1></a>';
-			//echo '<a href="'.get_home_url().'" title="'.get_bloginfo('name').'"><img src="'.$cat_background_image.'" alt="'.get_bloginfo('name').'" /></a>';
-			if ($cat_subtitle) {
-				echo '<div class="ea-blog-subtitle">';
-				echo '<h6>'.$cat_subtitle.'</h6>';
-				echo '</div>';
-			}
+			echo '<div class="prl-header-logo header-logo-custom" style="background-image:url('.$cat_background_image.')">';
+			echo '<div class="header-logo-wrap">';
+				echo '<a href="'.get_home_url().'" title="'.get_bloginfo('name').'"><h1 class="ea-blog-title">'.$thisCatTitle.'</h1></a>';
+				//echo '<a href="'.get_home_url().'" title="'.get_bloginfo('name').'"><img src="'.$cat_background_image.'" alt="'.get_bloginfo('name').'" /></a>';
+				if ($cat_subtitle) {
+					echo '<div class="ea-blog-subtitle">';
+					echo '<h3>'.$cat_subtitle.'</h3>';
+					echo '</div>';
+				}
+				echo '</div>'; // header-logo-wrap
 			echo '</div>';
 		} else {
 			echo '<div class="prl-header-logo">';
