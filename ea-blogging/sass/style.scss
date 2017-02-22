@@ -93,6 +93,7 @@ header#masthead {
 
 .prl-archive-title ~ .prl-grid.prl-grid-divider {
 	padding-top: 10px;
+	clear: both;
 }
 
 //////////////
@@ -137,9 +138,15 @@ header#masthead {
 
 // sidebar
 
-#sidebar .post-date {
-	font-size: .8em;
-	color: #6f6f6f;
+#sidebar {
+	.widget {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	.post-date {
+		font-size: .8em;
+		color: #6f6f6f;
+	}
 }
 
 
