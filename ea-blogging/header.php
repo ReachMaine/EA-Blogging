@@ -103,11 +103,12 @@ $body_class = array('Boxed'=>'site-boxed', 'Wide'=>'site-wide');
 					<?php  if($prl_data['header_custom_text']!=''){?>
 						<span class="prl-header-custom-text"><?php echo trim($prl_data['header_custom_text']);?></span>
 					<?php  } ?>
-					<a href="//www.ellsworthamerican.com/"><img src="<?php bloginfo('url')?>/wp-content/themes/ea-blogging/images/ea_logo-sm.jpg"></a>
+
 				</div>
 				<div class="prl-header-mid">
 				</div>
 				<div class="prl-header-right">
+						Powered by <a href="//www.ellsworthamerican.com/"><img class="ea-powered" src="<?php bloginfo('url')?>/wp-content/themes/ea-blogging/images/ea-logo-white.png"></a>
 				</div>
 			</div>
 		</header>
