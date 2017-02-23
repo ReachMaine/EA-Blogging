@@ -96,7 +96,7 @@ $body_class = array('Boxed'=>'site-boxed', 'Wide'=>'site-wide');
 
 			</div> <?php /* end pr1-container for top menu & search */ ?>
 			<div class="masthead-bg clearfix">
-				<?php  ea_header_logo(); /* display appropiate header */ ?>
+				<?php  $customheader = ea_header_logo(); /* display appropiate header */ ?>
 			</div>
 			<div class="prl-container top-header">
 				<div class="prl-header-left">
@@ -107,9 +107,10 @@ $body_class = array('Boxed'=>'site-boxed', 'Wide'=>'site-wide');
 				</div>
 				<div class="prl-header-mid">
 				</div>
+				<?php if ($customheader) { ?>
 				<div class="prl-header-right">
-						Powered by <a href="//www.ellsworthamerican.com/"><img class="ea-powered" src="<?php bloginfo('url')?>/wp-content/themes/ea-blogging/images/ea-logo-white.png"></a>
-				</div>
+						<a href="//www.ellsworthamerican.com/"><img class="ea-powered" src="<?php bloginfo('url')?>/wp-content/themes/ea-blogging/images/ea-logo-white.png"></a>
+				</div><?php } ?>
 			</div>
 		</header>
 		<nav id="nav" class="prl-navbar" role="navigation">

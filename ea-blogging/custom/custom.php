@@ -97,5 +97,5 @@ if (!function_exists('ea_blog_nav')) {
 				echo '<a href="'.get_home_url().'" title="'.get_bloginfo('name').'"><img src="'.sitelogo().'" alt="'.get_bloginfo('name').'" /></a>';
 			echo '</div>';
 		}
-
+		return $do_special_header;
 	} // end of ea_header_logo
