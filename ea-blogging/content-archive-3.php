@@ -5,7 +5,11 @@
 	<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
  	  <?php /* If this is a category archive */ if (is_category()) { ?>
 		<h3 class="prl-archive-title"><?php single_cat_title(); ?></h3>
-		<?php echo category_description(); ?>
+		<?php
+			echo '<div class="ea-cat-description">';
+			echo category_description();
+			echo '</div>'
+		?>
  	  <?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
 		<h3 class="prl-archive-title"><?php _e('Posts Tagged','presslayer');?>: <?php single_tag_title(); ?></h3>
  	  <?php /* If this is a daily archive */ } elseif (is_day()) { ?>
