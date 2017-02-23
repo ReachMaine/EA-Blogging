@@ -66,6 +66,8 @@ if (!function_exists('ea_blog_nav')) {
 						$thisCatID = $cats[0]->term_id;
 						$thisCatTitle = $cats[0]->name;
 					}
+				} else {
+					$thisCatTitle = get_cat_name($thisCatID);
 				}
 			} // end is_single
 
