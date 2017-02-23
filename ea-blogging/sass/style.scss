@@ -65,10 +65,15 @@ header#masthead {
 	.prl-header-right {
 	    line-height: 40px;
 	    margin-top: -44px;
+			padding-right: 0px;
 	    img.ea-powered {
 	       padding-left: 5px;
 	    }
 	}
+}
+
+header#masthead .masthead-bg {
+	padding-top: 0px;
 }
 
 /* aligning main & top navigation */
@@ -96,7 +101,18 @@ header#masthead {
 	clear: both;
 }
 
-//////////////
+.ea-cat-description ~ div.prl-grid.prl-grid-divider {
+	padding-top: 20px;
+	border-top: 1px solid #ddd;
+}
+
+// Hiding thrid category title while we figure out the name
+
+#aq-template-wrapper-23 h5.prl-block-title.default {
+	display: none;
+}
+
+////
 
 .single-post-thumbnail img {
   width: 100%;
@@ -149,6 +165,9 @@ header#masthead {
 	}
 }
 
+.widget_recent_entries li:nth-child(n+2) {
+	margin-top: 5px;
+}
 
 
 // Pull-Quotes
@@ -431,7 +450,7 @@ color: black;
 }
 
 div.prl-grid prl-grid-divider {
-border-top: 1px solid #dcdcdc;
+border-top: 1px solid #ddd;
 }
 
 footer#footer .prl-grid-divider:not(:empty)>[class*='prl-span-']:not(.prl-span-12):nth-child(n+2) {
