@@ -95,6 +95,53 @@ $body_class = array('Boxed'=>'site-boxed', 'Wide'=>'site-wide');
 				</nav>
 
 			</div> <?php /* end pr1-container for top menu & search */ ?>
+			<nav id="nav" class="prl-navbar" role="navigation">
+				<div class="prl-container">
+					<div class="nav-wrapper clearfix centered-menu">
+					<?php
+					// Main Menu
+					if ( has_nav_menu( 'main_nav' ) ) :
+
+						$args = array (
+							'theme_location' => 'main_nav',
+							'container' => false,
+							'container_class' => 'prl-navbar',
+							'menu_class' => 'sf-menu',
+							'menu_id' => 'sf-menu',
+							'depth' => 4,
+							'fallback_cb' => false
+
+						 );
+						if($prl_data['megamenu']!='Disable'):
+							$mega = array ('walker' => new TMMenu());
+							$args = array_merge($mega, $args);
+						endif;
+						wp_nav_menu($args);
+					 else:
+						echo '<div class="message warning"><i class="icon-warning-sign"></i>' . __( 'Define your site main menu', 'presslayer' ) . '</div>';
+					 endif;
+
+					?>
+
+					<div class="nav_menu_control"><a href="#" data-prl-offcanvas="{target:'#offcanvas'}"><span class="prl-nav-toggle prl-nav-menu"></span><span class="nav_menu_control_text"><?php _e('','presslayer');?></span></a>
+					</div>
+					<?php if($prl_data['header_search_btn']!='Disable'):?>
+					<div class="prl-nav-flip show-tablet">
+						<?php /*  <div class="right"><a href="#" id="search_btn" class="prl-nav-toggle prl-nav-toggle-search search_zoom" title="Search"></a></div> */ ?>
+
+						<div id="search_form" class="nav_search show-tablet">
+							<form class="prl-search" action="<?php echo home_url('', 'https');?>">
+								<input type="text" id="s" name="s" value="" placeholder="&#xF002;" class="nav_search_input" />
+								<?php /* <input type="text" id="s" name="s" value="" placeholder="<?php _e('Search ...','presslayer');?>" class="nav_search_input" /> */ ?>
+							</form>
+						</div>
+
+					</div>
+					<?php endif;?>
+
+					</div>
+				</div>
+			</nav>
 			<div class="masthead-bg clearfix">
 				<?php  $customheader = ea_header_logo(); /* display appropiate header */ ?>
 			</div>
@@ -109,57 +156,11 @@ $body_class = array('Boxed'=>'site-boxed', 'Wide'=>'site-wide');
 				</div>
 				<?php if ($customheader) { ?>
 				<div class="prl-header-right">
-						<a href="//www.ellsworthamerican.com/"><img class="ea-powered" src="<?php bloginfo('url')?>/wp-content/themes/ea-blogging/images/ea-logo-white.png"></a>
+						<a href="//www.ellsworthamerican.com/"><img class="ea-powered" src="<?php bloginfo('url')?>/wp-content/themes/ea-blogging/images/powered-by-EA.png"></a>
 				</div><?php } ?>
 			</div>
 		</header>
-		<nav id="nav" class="prl-navbar" role="navigation">
-			<div class="prl-container">
-				<div class="nav-wrapper clearfix centered-menu">
-				<?php
-				// Main Menu
-				if ( has_nav_menu( 'main_nav' ) ) :
 
-					$args = array (
-						'theme_location' => 'main_nav',
-						'container' => false,
-						'container_class' => 'prl-navbar',
-						'menu_class' => 'sf-menu',
-						'menu_id' => 'sf-menu',
-						'depth' => 4,
-						'fallback_cb' => false
-
-					 );
-					if($prl_data['megamenu']!='Disable'):
-						$mega = array ('walker' => new TMMenu());
-						$args = array_merge($mega, $args);
-					endif;
-					wp_nav_menu($args);
-				 else:
-					echo '<div class="message warning"><i class="icon-warning-sign"></i>' . __( 'Define your site main menu', 'presslayer' ) . '</div>';
-				 endif;
-
-				?>
-
-				<div class="nav_menu_control"><a href="#" data-prl-offcanvas="{target:'#offcanvas'}"><span class="prl-nav-toggle prl-nav-menu"></span><span class="nav_menu_control_text"><?php _e('','presslayer');?></span></a>
-				</div>
-				<?php if($prl_data['header_search_btn']!='Disable'):?>
-				<div class="prl-nav-flip show-tablet">
-					<?php /*  <div class="right"><a href="#" id="search_btn" class="prl-nav-toggle prl-nav-toggle-search search_zoom" title="Search"></a></div> */ ?>
-
-					<div id="search_form" class="nav_search show-tablet">
-						<form class="prl-search" action="<?php echo home_url('', 'https');?>">
-							<input type="text" id="s" name="s" value="" placeholder="&#xF002;" class="nav_search_input" />
-							<?php /* <input type="text" id="s" name="s" value="" placeholder="<?php _e('Search ...','presslayer');?>" class="nav_search_input" /> */ ?>
-						</form>
-					</div>
-
-				</div>
-				<?php endif;?>
-
-				</div>
-			</div>
-		</nav>
 
 		<script>
 			var $ = jQuery.noConflict();
