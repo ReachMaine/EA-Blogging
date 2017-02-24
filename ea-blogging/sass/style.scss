@@ -108,7 +108,7 @@ header#masthead .masthead-bg {
 
 // Hiding thrid category title while we figure out the name
 
-#aq-template-wrapper-23 h5.prl-block-title.default {
+#aq-template-wrapper-23 .prl-span-4:nth-child(3) h5.prl-block-title.default {
 	display: none;
 }
 
