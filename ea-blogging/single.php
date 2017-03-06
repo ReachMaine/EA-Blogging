@@ -44,12 +44,9 @@
         							$image = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'full-size'); // For pinterest sharing
         							?>
         						</div>
-    							<?php if (function_exists('cc_featured_image_caption') ) {
-                                    echo '<div class="single-post-thumbnail-caption space-bot">';
-    								cc_featured_image_caption();
-                                    echo '</div>';
+                                <?php if ( $caption = get_post( get_post_thumbnail_id() )->post_excerpt ) {
+                                    echo '<div class="single-post-thumbnail-caption space-bot">'.$caption.'</div>';
     							} ?>
-
         					<?php } /* end if has_post_thumbnail */ ?>
 
 
