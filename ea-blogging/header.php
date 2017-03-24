@@ -49,6 +49,11 @@ global $theme_url, $prl_data; ?>
 			}
 		}
 	?>
+	<?php /* zig 24Mar17 - add admin to facebook comments */
+	   if (is_single() ) {
+		   echo '<meta property="fb:admins" content="{100002128785475}"/>';  /* cyndi wood as comments moderator */
+	   }
+	?>
 
 </head>
 <?php
