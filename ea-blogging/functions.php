@@ -26,6 +26,15 @@
         'after_widget'  => '</div></div>'
 
       ));
+      // 24March17 zig - added for facebook comments
+      register_sidebar(array(
+        'name' => 'Single Bottom',
+        'id' => 'single-bot',
+        'description' => 'Under content on single post',
+        'before_widget' => '<div class="prl-span-12"><div id="%1$s" class=" %2$s single-bottom">',
+        'after_widget'  => '</div></div>'
+
+      ));
     }
 
   } // end of ea_setup()

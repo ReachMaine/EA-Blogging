@@ -1,6 +1,7 @@
 <?php  /* template mods:
     13Feb17 zig - copy'd from EA
     22Feb17 zig - put title first, move thumbnail into content. cleanup obit stuff.
+    24Mar17 zig - add widget area for single bottom.
  */
 ?>
 <?php get_header();?>
@@ -52,6 +53,9 @@
 
 						   <?php/*  if($prl_data['show_excerpt']=='Enable') {?><strong><?php the_excerpt(); ?></strong><?php } */ ?>
 						   <?php /* zig 23Aug16 ++ */ the_content(); ?>
+                           <?php if (is_active_sidebar('single-bot')) {  // 24Mar17 zig
+                               		dynamic_sidebar( 'single-bot' );
+                       	    } ?>
                            <?php if (function_exists('ea_blog_nav')) { ea_blog_nav(); } ?>
 						   <?php wp_link_pages(array('before' => __('Pages','presslayer').': ', 'next_or_number' => 'number')); ?>
 						   <?php edit_post_link(__('Edit','presslayer'),'<p>','</p>'); ?>
