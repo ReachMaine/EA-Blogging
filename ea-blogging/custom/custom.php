@@ -47,7 +47,27 @@ if (!function_exists('ea_blog_nav')) {
 		return $html_out;
 	}  // end function ea_blog_nav()
 }
-
+// facebook comments on single posts //
+if (!function_exists('ea_blog_fbcomment')) {
+	function ea_blog_fbcomment($include_fbskd = true) {
+		$html_out = '<div class="ea-blog-fbcomment">' ;
+		$script_out = "";
+		if ($include_fbskd) {
+			$script_out .= '<div id="fb-root"></div><script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+			  fjs.parentNode.insertBefore(js, fjs);
+		  }(document, "script", "facebook-jssdk"));</script>';
+		}
+		$div_out = "";
+		$div_out .= '<div class="fb-comments" data-href="'.get_permalink().'" data-numposts="3" data-width="100%" ></div>';
+		$html_out .= $script_out.$div_out;
+		$html_out .= '</div>';
+		return $html_out;
+	}  // end function ea_blog_fbcomment()
+}
 	function ea_header_logo() {
 		$thisCatID = 0;
 		$do_special_header = false;
