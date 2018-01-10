@@ -30,7 +30,8 @@ global $theme_url, $prl_data; ?>
 	if (!is_singular('post') ) { 	?>
 		<script data-cfasync="false" type="text/javascript" >var ta_cat = "not_post"; </script>
 	<?php }  ?>
-   <script data-cfasync="false" type="text/javascript" src="http://ellsworthamerican.me.pw.newsmemory.com/include.php?service=onstop"></script>
+	   <?php /* <script data-cfasync="false" type="text/javascript" src="//ellsworthamerican-me-pw.newsmemory.com/?meter&amp;v=0"></script>
+<script data-cfasync="false" type="text/javascript" src="http://ellsworthamerican.me.pw.newsmemory.com/include.php?service=onstop"></script> */ ?>
 	<script data-cfasync="false" type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1','packages':['corechart']}]}"></script>
 <?php wp_head();?>
 	<?php if ( is_home() || is_front_page() )  { ?>
